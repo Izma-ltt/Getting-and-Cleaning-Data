@@ -1,9 +1,9 @@
 # Getting-and-Cleaning-Data
-***Assignment for the Coursera course Getting and Cleaning Dats
+## Assignment for the Coursera course Getting and Cleaning Dats
 
-*This Github repository contains my work on the assignment for the Week 4 of the Getting and Cleaning Data course.
+This Github repository contains my work on the assignment for the Week 4 of the Getting and Cleaning Data course.
 
-*At the bottom of this ReadMe file you can find the R script, while the rest of the text explains the code in detail and explains why this approach of tidying dataset has been chosen.
+At the bottom of this ReadMe file you can find the R script, while the rest of the text explains the code in detail and explains why this approach of tidying dataset has been chosen.
 
 1. The script first reads the URL containing the zip file
 2. Using the temporary zip file it reads and saves training and test data (measurement, subject and activity data) into separate variables ( train_full, tran_subject, train_activities respectively )
