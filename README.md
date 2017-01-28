@@ -9,7 +9,7 @@ At the bottom of this ReadMe file you can find the R script, while the rest of t
 2.	Using the temporary zip file it reads and saves training and test data (measurement, subject and activity data) into separate variables ( train_full, tran_subject, train_activities respectively )
 3.	Further, it saves activities labels and features (names of the measurement variables) files
 4.	Using features files it renames the columns of the test and training data
-*	renaming is done before joining training and test data, so the joining process can be done by column names in full
+*	Renaming is done before joining training and test data, so the joining process can be done by column names in full
 5.	After renaming, only "mean" and "std" variables are chosen by using select function from dplyr package, this is saved in new train and set variables
 6.	To the smaller train and test variables (only 86 vs. initial 561 variables) activities and subject columns are added. These variables were read directly from the zip file ( "y_train.txt" for activities, "subject_train.txt" for subjects, for both train and test ) as per ReadMe file
 7.	Another column is added to both train and test datasets - ExperimentalDesign, which should preserve the information about whether the measurement was taken for training or test
