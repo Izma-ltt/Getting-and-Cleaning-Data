@@ -9,16 +9,16 @@ At the bottom of this ReadMe file you can find the R script, while the rest of t
 2.	Using the temporary zip file it reads and saves training and test data (measurement, subject and activity data) into separate variables ( train_full, tran_subject, train_activities respectively )
 3.	Further, it saves activities labels and features (names of the measurement variables) files
 4.	Using features files it renames the columns of the test and training data
-*	Renaming is done before joining training and test data, so the joining process can be done by column names in full
+   *	Renaming is done before joining training and test data, so the joining process can be done by column names in full
 5.	After renaming, only "mean" and "std" variables are chosen by using select function from dplyr package, this is saved in new train and set variables
-* variables with mean in the name, but which are angle() estimators where excluded from the list
+   * Variables with mean in the name, but which are angle() estimators where excluded from the list
 6.	To the smaller train and test variables (only 86 vs. initial 561 variables) activities and subject columns are added. These variables were read directly from the zip file ( "y_train.txt" for activities, "subject_train.txt" for subjects, for both train and test ) as per ReadMe file
 7.	Another column is added to both train and test datasets - ExperimentalDesign, which should preserve the information about whether the measurement was taken for training or test
 8.	Training and test datasets are then fully joined as they contain the same columns set
 9.	Activities variable values are then relabelled to a more descriptive naming convention, using the activity_labels.txt file
 10.	Data is then melted in line with one variable one column and one row one observation approach - each subject performed one activity in either test or training set up; and measured one of the 86 features:
-*	ID variables are defined as Activities, Subjects and Experimental Design
-*	Measures variables are all other variables, coming from the features.txt file (only mean and std)
+    *	ID variables are defined as Activities, Subjects and Experimental Design
+    *	Measures variables are all other variables, coming from the features.txt file (only mean and std)
 11.	After melting final dataset can be obtained, by reshaping the melted structure into Subject + Activity vs. all measurements matrix, where each input represents the mean of all possible inputs for this combination of variables (Subject, Activity, ExperimentalDesign, measurement variable )
 As Hadley Wickham mentions in his article, depending on the purpose of the dataset dataset can be tidied in different way.
 The first two main tidy data rules are in place: 1. each variable forms a column 2. Each observation forms a row
