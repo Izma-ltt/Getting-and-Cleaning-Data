@@ -22,5 +22,9 @@ At the bottom of this ReadMe file you can find the R script, while the rest of t
 11.	After melting final dataset can be obtained, by reshaping the melted structure into Subject + Activity vs. all measurements matrix, where each input represents the mean of all possible inputs for this combination of variables (Subject, Activity, ExperimentalDesign, measurement variable )
 
 As Hadley Wickham mentions in his article, depending on the purpose of the dataset dataset can be tidied in different way.
-The first two main tidy data rules are in place: 1. each variable forms a column 2. Each observation forms a row
-In the case of the third on 3. Each type of observational unit forms a table. ExperimentalDesign variable is an example of his "variables are stored in both rows and column" tidy data issue, however given that we have 86 columns for both designs, instead of creating two tables I decided to use one indicator variable (ExperimentalDesign), so this data can be easily used for ANOVA for example to check whether these two are statistically different. The rest of the variables are in line with this rule. Also, the original task does not include taking ExperimentalDesign into account.
+The first two main tidy data rules are in place:
+1. each variable forms a column
+2. Each observation forms a row
+In the case of the third
+3. Each type of observational unit forms a table
+ExperimentalDesign variable is an example of his "variables are stored in both rows and column" tidy data issue, however given that we have 86 columns for both designs, instead of creating two tables I decided to use one indicator variable (ExperimentalDesign), so this data can be easily used for ANOVA for example to check whether these two are statistically different. The rest of the variables are in line with this rule. Also, the original task does not include taking ExperimentalDesign into account.
