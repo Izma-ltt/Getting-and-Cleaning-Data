@@ -19,7 +19,7 @@ At the bottom of this ReadMe file you can find the R script, while the rest of t
     * ID variables are defined as Activities, Subjects and Experimental Design
     * Measures variables are all other variables, coming from the X_train.txt file (only mean and std)
     this approach is in line with one variable one column approach and one row one observation
-    ** each subject doing one activity in either test or training set up measured one of the 86 variables
+    * - each subject doing one activity in either test or training set up measured one of the 86 variables
 11. After melting, final dataset can be obtained, by reshaping the melted structure into Subject + Activity vs. all measurements matrix, where each input represents the mean of all possible inputs for this combination of variables (Subject, Activity, ExperimentalDesign, measurement variable )
 
 As Hadley Wickham mentions in his article, depending on the purpose of the dataset dataset can be tidied in different way. 
