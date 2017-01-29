@@ -32,3 +32,8 @@ In the case of the third:
 3.   Each type of observational unit forms a table
 
 ExperimentalDesign variable is an example of his "variables are stored in both rows and column" tidy data issue, however given that we have 79 columns for both designs, instead of creating two tables I decided to use one indicator variable (ExperimentalDesign), so this data can be easily used for ANOVA for example - to check whether these two are statistically different. The rest of the variables are in line with this rule. Also, the original task does not include taking ExperimentalDesign into account.
+
+The final tidy dataset is 180 x 81 matrix:
+  * 30 subjects x 6 activities = 180 rows; since each subject did all 6 activities
+  * 82 rows; 79 measurement variables and 3 ID variables (activity, subject and experimentaldesign)
+  Note that there are 2 levels of ExperimentalDesign and that even though it's defined as an ID variable we do not have 360 rows. This is because each subject was either in training or testing group.
