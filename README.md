@@ -16,20 +16,25 @@ At the bottom of this ReadMe file you can find the R script, while the rest of t
 7.	Another column is added to both train and test datasets - ExperimentalDesign, which should preserve the information about whether the measurement was taken for training or test
 8.	Training and test datasets are then fully joined as they contain the same columns set
 9.	Activities variable values are then relabelled to a more descriptive naming convention, using the activity_labels.txt file
-10.	Data is then melted in line with one variable one column and one row one observation approach - each subject performed one activity in either test or training set up; and measured one of the 86 features:
+10. Columns are renamed to be more descriptive:
+    * t and f in the names are renamed to describe they denote time and frequency domain
+    * Mean, Std and MeanFreq derivations have been moved to the front of the name, for an easier distinction between similar variables
+    * Body, Acc, Gyro and Jerk are left as is, since they represent the body, accelerometer, gyroscope and jerk movement sufficiently, given the length constraints
+    * Mag is renamed to Magnitude, to better emphasize that it represent magnitude of the signals
+11.	Data is then melted in line with one variable one column and one row one observation approach - each subject performed one activity in either test or training set up; and measured one of the 86 features:
     *	ID variables are defined as Activities, Subjects and Experimental Design
     *	Measures variables are all other variables, coming from the features.txt file (only mean and std)
-11.	After melting final dataset can be obtained, by reshaping the melted structure into Subject + Activity vs. all measurements matrix, where each input represents the mean of all possible inputs for this combination of variables (Subject, Activity, ExperimentalDesign, measurement variable )
+12.	After melting final dataset can be obtained, by reshaping the melted structure into Subject + Activity vs. all measurements matrix, where each input represents the mean of all possible inputs for this combination of variables (Subject, Activity, ExperimentalDesign, measurement variable )
 
 As Hadley Wickham mentions in his article, depending on the purpose of the dataset, a dataset can be tidied in different ways.
 The first two main tidy data rules are in place:
 
-1.   Each variable forms a column
-2.   Each observation forms a row
+ 1.   Each variable forms a column
+ 2.   Each observation forms a row
 
 In the case of the third:
 
-3.   Each type of observational unit forms a table
+ 3.   Each type of observational unit forms a table
 
 ExperimentalDesign variable is an example of his "variables are stored in both rows and column" tidy data issue, however given that we have 79 columns for both designs, instead of creating two tables I decided to use one indicator variable (ExperimentalDesign), so this data can be easily used for ANOVA for example - to check whether these two are statistically different. The rest of the variables are in line with this rule. Also, the original task does not include taking ExperimentalDesign into account.
 
