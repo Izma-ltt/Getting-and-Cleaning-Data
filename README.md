@@ -17,9 +17,9 @@ At the bottom of this ReadMe file you can find the R script, while the rest of t
 8.	Training and test datasets are then fully joined as they contain the same columns set
 9.	Activities variable values are then relabelled to a more descriptive naming convention, using the activity_labels.txt file
 10. Columns are renamed to be more descriptive:
-    * t and f in the names are renamed to describe they denote time and frequency domain
+    * t and f in the names are renamed to describe they denote time and frequency domains
     * Mean, Std and MeanFreq derivations have been moved to the front of the name, for an easier distinction between similar variables
-    * Body, Acc, Gyro and Jerk are left as is, since they represent the body, accelerometer, gyroscope and jerk movement sufficiently, given the length constraints
+    * Body, Acc, Gyro and Jerk are left as they are, since they represent words "body", "accelerometer", "gyroscope" and "jerk movement" sufficiently, given the length constraints
     * Mag is renamed to Magnitude, to better emphasize that it represent magnitude of the signals
 11.	Data is then melted in line with one variable one column and one row one observation approach - each subject performed one activity in either test or training set up; and measured one of the 86 features:
     *	ID variables are defined as Activities, Subjects and Experimental Design
