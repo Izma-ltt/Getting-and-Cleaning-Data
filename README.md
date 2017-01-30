@@ -21,7 +21,7 @@ At the bottom of this ReadMe file you can find the R script, while the rest of t
     * Mean, Std and MeanFreq derivations have been moved to the front of the name, for an easier distinction between similar variables
     * Body, Acc, Gyro and Jerk are left as they are, since they represent words "body", "accelerometer", "gyroscope" and "jerk movement" sufficiently, given the length constraints
     * Mag is renamed to Magnitude, to better emphasize that it represent magnitude of the signals
-11.	Data is then melted in line with one variable one column and one row one observation approach - each subject performed one activity in either test or training set up; and measured one of the 86 features:
+11.	Data is then melted in line with one variable one column and one row one observation approach - each subject performed one activity in either test or training set up; and measured one of the 79 features:
     *	ID variables are defined as Activities, Subjects and Experimental Design
     *	Measures variables are all other variables, coming from the features.txt file (only mean and std)
 12.	After melting final dataset can be obtained, by reshaping the melted structure into Subject + Activity vs. all measurements matrix, where each input represents the mean of all possible inputs for this combination of variables (Subject, Activity, ExperimentalDesign, measurement variable )
