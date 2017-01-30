@@ -1,0 +1,275 @@
+CODEBOOK - GETTING AND CLEANING DATA COURSE PROJECT
+
+ACTIVITIES
+- activities performed by the subjects while wearing a smartphone
+- factor variable with 6 levels
+	1 WALKING
+	2 WALKING_UPSTAIRS
+	3 WALKING_DOWNSTAIRS
+	4 SITTING
+	5 STANDING
+	6 LAYING
+
+SUBJECTS
+- volunteers for the experiment, randomly sepgregated into training and testing groups
+- integer, range [ 1, 30 ]
+
+EXPERIMENTAL DESIGN
+- variable representing whether the subject is from the training or testing set
+- chr variable with 2 possible values
+	1 train
+	2 test
+
+*The following variables represent average (mean) of the original variables given in the assignment, 
+my understanding of the variables themselves and the units is limited by the ReadMe.txt and features_info.txt
+files and my personal understanding of the experiment at hand.
+
+TIME_MEAN BODY ACC_X AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) body accelerometer raw X axis signal
+
+TIME_MEAN BODY ACC_Y AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) body accelerometer raw Y axis signal
+
+TIME_MEAN BODY ACC_Z AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) body accelerometer raw Z axis signal
+
+TIME_STD BODY ACC_X AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) body accelerometer raw X axis signal
+
+TIME_STD BODY ACC_Y AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) body accelerometer raw Y axis signal
+
+TIME_STD BODY ACC_Z AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) body accelerometer raw Z axis signal
+
+TIME_MEAN GRAVITY ACC_X AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) gravity accelerometer raw X axis signal
+
+TIME_MEAN GRAVITY ACC_Y AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) gravity accelerometer raw X axis signal
+
+TIME_MEAN GRAVITY ACC_Z AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) gravity accelerometer raw X axis signal
+
+TIME_STD GRAVITY ACC_X AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) gravity accelerometer raw X axis signal
+
+TIME_STD GRAVITY ACC_Y AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) gravity accelerometer raw Y axis signal
+
+TIME_STD GRAVITY ACC_Z AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) gravity accelerometer raw Z axis signal
+
+TIME_MEAN BODY JERK_X AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity raw X axis signals
+
+TIME_MEAN BODY JERK_Y AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity raw Y axis signals
+
+TIME_MEAN BODY JERK_Z AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity raw Z axis signals
+
+TIME_STD BODY JERK_X AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity raw X axis signals
+
+TIME_STD BODY JERK_Y AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity raw Y axis signals
+
+TIME_STD BODY JERK_Z AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity raw Z axis signals
+
+TIME_MEAN BODY GYRO_X AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) body gyroscope raw X axis signal
+
+TIME_MEAN BODY GYRO_Y AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) body gyroscope raw Y axis signal
+
+TIME_MEAN BODY GYRO_Z AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) body gyroscope raw Z axis signal
+
+TIME_STD BODY GYRO_X AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) body gyroscope raw X axis signal
+
+TIME_STD BODY GYRO_Y AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) body gyroscope raw Y axis signal
+
+TIME_STD BODY GYRO_Z AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) body gyroscope raw Z axis signal
+
+TIME_MEAN BODY GYRO JERK_X AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity gyroscope raw X axis signals
+
+TIME_MEAN BODY GYRO JERK_Y AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity gyroscope raw Y axis signals
+
+TIME_MEAN BODY GYRO JERK_Z AXIS
+- numeric variable
+- mean of the mean of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity gyroscope raw Z axis signals
+
+TIME_STD BODY GYRO JERK_X AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity gyroscope raw X axis signals
+
+TIME_STD BODY GYRO JERK_Y AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity gyroscope raw Y axis signals
+
+TIME_STD BODY GYRO JERK_Z AXIS
+- numeric variable
+- mean of the standard deviation of time ( seconds ) Jerk signal derived from the body linear acceleration and angular velocity gyroscope raw Z axis signals
+
+TIME_MEAN BODY ACC MAGNITUDE
+- numeric variable
+- mean of the magnitude of the TIME_MEAN BODY ACC_XYZ AXIS three-dimensional signals (calculated using the Euclidean norm)
+
+TIME_STD BODY ACC MAGNITUDE
+- numeric variable
+- mean of the magnitude of the TIME_STD BODY ACC_XYZ AXIS three-dimensional signals (calculated using the Euclidean norm)
+
+TIME_MEAN GRAVITY ACC MAGNITUDE
+- numeric variable
+- mean of the magnitude of the TIME_MEAN GRAVITY ACC_XYZ AXIS three-dimensional signals (calculated using the Euclidean norm)
+
+TIME_STD GRAVITY ACC MAGNITUDE
+- numeric variable
+- mean of the magnitude of the TIME_STD GRAVITY ACC_XYZ AXIS three-dimensional signals (calculated using the Euclidean norm)
+
+TIME_MEAN BODY ACC JERK MAGNITUDE
+- numeric variable
+- mean of the magnitude of the TIME_MEAN BODY ACC JERK ACC_XYZ AXIS three-dimensional signals (calculated using the Euclidean norm)
+
+TIME_STD BODY ACC JERK MAGNITUDE
+- numeric variable
+- mean of the magnitude of the TIME_STD BODY ACC JERK ACC_XYZ AXIS three-dimensional signals (calculated using the Euclidean norm)
+
+TIME_MEAN BODY GYRO MAGNITUDE
+- numeric variable
+- mean of the magnitude of the TIME_MEAN BODY GYRO_XYZ AXIS three-dimensional signals (calculated using the Euclidean norm)
+
+TIME_STD BODY GYRO MAGNITUDE
+- numeric variable
+- mean of the magnitude of the TIME_STD BODY GYRO_XYZ AXIS three-dimensional signals (calculated using the Euclidean norm)
+
+TIME_MEAN GYRO JERK MAGNITUDE
+- numeric variable
+- mean of the magnitude of the TIME_MEAN GYRO JERK_XYZ AXIS three-dimensional signals (calculated using the Euclidean norm)
+
+TIME_STD GYRO JERK MAGNITUDE
+- numeric variable
+- mean of the magnitude of the TIME_STD GYRO JERK_XYZ AXIS three-dimensional signals (calculated using the Euclidean norm)
+
+FREQ_MEAN BODY ACC_X AXIS
+- numeric variable
+- mean of the mean of the frequency (Hz) body accelerometer raw X axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEAN BODY ACC_Y AXIS
+- numeric variable
+- mean of the mean of the frequency (Hz) body accelerometer raw Y axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEAN BODY ACC_Z AXIS
+- numeric variable
+- mean of the mean of the frequency (Hz) body accelerometer raw Z axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_STD BODY ACC_X AXIS
+- numeric variable
+- mean of the standard deviation of the frequency (Hz) body accelerometer raw X axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_STD BODY ACC_Y AXIS
+- numeric variable
+- mean of the standard deviation of the frequency (Hz) body accelerometer raw Y axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_STD BODY ACC_Z AXIS
+- numeric variable
+- mean of the standard deviation of the frequency (Hz) body accelerometer raw Z axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEAN FREQ BODY ACC_X AXIS
+- numeric variable
+- mean of the weighted average frequency (Hz) of the body accelerometer raw X axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEAN FREQ BODY ACC_Y AXIS
+- numeric variable
+- mean of the weighted average frequency (Hz) of the body accelerometer raw Y axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEAN FREQ BODY ACC_Z AXIS
+- numeric variable
+- mean of the weighted average frequency (Hz) of the body accelerometer raw Z axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEAN BODY ACC JERK_X AXIS
+- numeric variable
+- mean of the mean of the frequency (Hz) body linear accelerometer and angular velocity X axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEAN BODY ACC JERK_Y AXIS
+- numeric variable
+- mean of the mean of the frequency (Hz) body linear accelerometer and angular velocity Y axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEAN BODY ACC JERK_Z AXIS
+- numeric variable
+- mean of the mean of the frequency (Hz) body linear accelerometer and angular velocity Z axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_STD BODY ACC JERK_X AXIS
+- numeric variable
+- mean of the standard deviation of the frequency (Hz) body linear accelerometer and angular velocity X axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_STD BODY ACC JERK_Y AXIS
+- numeric variable
+- mean of the standard deviation of the frequency (Hz) body linear accelerometer and angular velocity Y axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_STD BODY ACC JERK_Z AXIS
+- numeric variable
+- mean of the standard deviation of the frequency (Hz) body linear accelerometer and angular velocity Z axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEANFREQ BODY ACC JERK_X AXIS
+- numeric variable
+- mean of the weighted average frequency (Hz) of the body linear accelerometer and angular velocity X axis signal
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEANFREQ BODY ACC JERK_Y AXIS
+- numeric variable
+- mean of the weighted average frequency (Hz) of the body linear accelerometer and angular velocity Y axis signal 
+- a Fast Fourier Transform (FFT) was applied to the original variable
+
+FREQ_MEANFREQ BODY ACC JERK_Z AXIS
+- numeric variable
+- mean of the weighted average frequency (Hz) of the body linear accelerometer and angular velocity Z axis signal 
+- a Fast Fourier Transform (FFT) was applied to the original variable
