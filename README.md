@@ -51,7 +51,6 @@ run_analysis = function()
     install.packages( "reshape2")
     library( dplyr )
     library( reshape2)
-    
     temp   <- tempfile()
     download.file( "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",temp)
     
