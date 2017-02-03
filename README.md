@@ -3,7 +3,7 @@
 
 This Github repository contains my work on the assignment for the Week 4 of the Getting and Cleaning Data course.
 
-At the bottom of this ReadMe file you can find the R script, while the rest of the text explains the code in detail and explains why this approach of tidying dataset has been chosen. Additionally, the repository holds CodeBook which explains the variables, detailing what they represent (to the best of my understanding), there units or levels (if it's a factor variable) and their type.
+At the bottom of this ReadMe file you can find the R script, while the rest of the text explains the code in detail and explains why this approach of tidying dataset has been chosen. Additionally, the repository holds CodeBook which explains the variables, detailing what they represent (to the best of my understanding), their units or levels (if it's a factor variable) and their type.
 
 1.	The script first reads the URL containing the zip file (so everybody should be able to run the script in full)
 2.	Using the temporary zip file it reads and saves training and test data (measurement, subject and activity data) into separate variables ( train_full, tran_subject, train_activities respectively )
@@ -11,7 +11,8 @@ At the bottom of this ReadMe file you can find the R script, while the rest of t
 4.	Using features files it renames the columns of the test and training data
    *	Renaming is done before joining training and test data, so the joining process can be done by column names in full
 5.	After renaming, only "mean" and "std" variables are chosen by using select function from dplyr package, this is saved in new train and set variables
-   * Variables with mean in the name, but which are angle() estimators where excluded from the list. MeanFreq was not excluded as the instructions were not cleat whether mean refers to meanFrq as well
+   * Variables with mean in the name, but which are angle() estimators where excluded from the list
+   * MeanFreq was not excluded as the instructions were not clear whether mean refers to meanFrq as well
 6.	To the smaller train and test variables (only 79 vs. initial 561 variables) activities and subject columns are added. These variables were read directly from the zip file ( "y_train.txt" for activities, "subject_train.txt" for subjects, for both train and test ) as per ReadMe file
 7.	Another column is added to both train and test datasets - ExperimentalDesign, which should preserve the information about whether the measurement was taken for training or test
 8.	Training and test datasets are then fully joined as they contain the same columns set
